@@ -1,4 +1,4 @@
-require_relative '../lib/04_simon_says'
+lsrequire_relative '../lib/04_simon_says'
 
 describe "Simon says" do
   describe "echo" do
