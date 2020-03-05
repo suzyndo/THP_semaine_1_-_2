@@ -146,4 +146,45 @@ def count_age_per_year_bis_half
     end
 end  
 
-count_age_per_year_bis_half
+def email_list
+
+    str = "jean.dupont.01@email.fr"
+    number = 1
+    email_array = []
+
+    50.times do 
+    
+      if
+        number > 10
+        email_array.push(str.gsub(/[01]/, '0' => "", '1' => number.to_s))
+      else
+        email_array.push(str.gsub(/[1]/, number.to_s))
+      end
+    number += 1
+
+    end
+    
+    print email_array
+    
+end
+
+def email_list_even
+
+  str = "jean.dupont.01@email.fr"
+  number = 1
+  email_array = []
+
+  50.times do 
+  
+    if
+      number % 2 == 0 #number > 10 
+      email_array.push(str.gsub(/[01]/, '0' => "", '1' => number.to_s))
+    end
+  number += 1
+
+  end
+  print email_array
+end
+
+email_list_even
+
