@@ -22,13 +22,13 @@ def stairs
       puts "Rien de nouveau ne se passe. Tu restes sur la #{stairs_compteur} ème marche "
     end
   end
-ending
 end
 
-def ending
-  puts "BRAVO tu es arrivé(e) sur la dixième marche, champion du monde "
-end
-
+def perform # on peut ajouter directement dans la méthode "orchestre" des morceaux de codes (style intro, fin) ne nécessitant pas de méthode à part entière
+puts "Bienvenue dans le jeu de l'oie nouvelle version !"
 stairs
+puts "BRAVO tu es arrivé(e) sur la dixième marche, champion(ne) du monde "
+end
   
+perform
   
